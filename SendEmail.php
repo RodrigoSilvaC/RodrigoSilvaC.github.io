@@ -5,7 +5,7 @@
     $from = $_POST['Email']; // this is the sender's Email address
     $first_name = $_POST['Name'];
     $subject = "Form submission";
-    $message = $first_name . " " . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message = $first_name . " " . " wrote the following:" . "\n\n" . $_POST['Message'];
 
     $headers = "From:" . $from;
     mail($to,$subject,$message,$headers);
